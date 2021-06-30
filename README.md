@@ -1,6 +1,6 @@
 # Depression-Detection Using a Chatbot
 
-### This project was built during the Covid-19 times to help people who suffer from depression to detect this mental illness with the help of a chatbot. The emotion detection model was built using CNN to help in the detection of emotions using the ISEAR dataset. The chatbot however used Keras's Sequential Model with an SGD optimizer to help predict an appropriate response for a User Text.
+##### This project was built during the Covid-19 times to help people who suffer from depression to detect this mental illness with the help of a chatbot. The emotion detection model was built using CNN to help in the detection of emotions using the ISEAR dataset. The chatbot however used Keras's Sequential Model with an SGD optimizer to help predict an appropriate response for a User Text.
 
 ## Requirements:
 1. Python 3.7
