@@ -1,0 +1,203 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","Hi"],
+     "responses": ["Hello there. I am Chattie. How can I be of help?", "Hi there, I am Chattie. How can I be of help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How could you help me?", "What can you do?", "What help do you provide?", "How can you be helpful?", "What support is offered"],
+     "responses": ["I can help you detect whether you are stressed, depressed or just a little tired,","I can help you with your problems and detect Depresssion if you do have it."],
+     "context": [""]
+    },
+    {"tag": "depression",
+     "patterns": ["How can I detect depression?", "How do I know the difference between stress and depression?", "How do I know if I have depression?", "Depression" ],
+     "responses": [ "I can be of help here."],
+     "context": [""]
+    },
+    {"tag":"askpatterns",
+     "patterns":["Ok"],
+     "responses":["Is your appetite normal?"],
+     "context":[""]
+    },
+    {"tag":"yesappetite",
+     "patterns": ["Yes, I eat well","I eat","I have no issues", "I haven't lost my appetite"],
+     "responses": ["That's great! Do you have any issues with drinking?"],
+     "context":[""]
+    },
+    {"tag":"noappetite",
+     "patterns": ["No, I don't eat well", "I can't eat", "I have lost my appetite"],
+     "responses": ["Oh no! How long has this issue been going on for?"],
+     "context":[""]
+    },
+    {"tag":"howlong",
+     "patterns": ["I haven't been able to eat for a few weeks now", "For a couple of months now."],
+     "responses":["Have you had any issues with drinking?"],
+     "context":[""]
+    },
+    {"tag":"yesdrinking",
+     "patterns":["I have been drinking a lot recently", "The stress makes me drink", "I feel like drinking to cope with the things going on in my life", "drinking helps me forget my problems"],
+     "responses":["Oh no! Have you been taking drugs too?"],
+     "context":[""]
+    },
+    {"tag":"nodrinking", 
+     "patterns":["I don't drink", "I drink occasionally", "I'm good", "I don't like drinking"],
+     "responses":["Oh that's good. I'm hoping you don't have issues with drugs though?"],
+     "context":[""]
+    },
+    {"tag":"yesdrugs",
+     "patterns":["I am addicted to drugs", "I do drugs all the time", "I smoke pot all the time", "I smoke", "I inhale"],
+     "responses":["Because of this have you had issues sleeping?"],
+     "context":[""]
+    },
+    {"tag":"nodrugs",
+     "patterns":["I am not addicted to drugs", "I don't do drugs", "I don't like drugs", "I'm not addicted", "It's a terrible habit"],
+     "responses":["Oooh that's great! I'm hoping you don't have issues sleeping though?"],
+     "context":[""]
+    },
+    {"tag":"yessleep",
+     "patterns": ["Yes, I sleep well","I sleep a lot", "Sleep pattern is normal", "I have no issues sleeping"],
+     "responses": ["That's great! Do you have any issues concentrating?"],
+     "context":[""]
+    },
+    {"tag":"nosleep",
+     "patterns": ["I have not slept properly in a while.", "I have had issues sleeping", "I sleep very late at night", "I am unable to sleep at all", "I have trouble sleeping"],
+     "responses": ["If that's the case, have you not been able to concetrate either?", "Have you had issues concentrating because of that?"],
+     "context":[""]
+    },
+    {"tag":"yesconcentrate",
+     "patterns":["I have no issues concentrating", "I am able to work properly", "I have no trouble being able to concentrate", "Even with less sleep, I am able to work normally", "Its  normal"],
+     "responses":["That's wonderful!"],
+     "context":[""]
+    },
+    {"tag":"noconcentrate",
+     "patterns":["I have not been able to concentrate for a long time now", "I'm unable to concentrate", "I have no mood for anything", "I can't work"],
+     "responses":["Must be awful for you. Does it leave you tired?"],
+     "context":[""]
+    },
+    {"tag":"yestired",
+     "patterns":["I'm always tired", "I feel like lazing in bed all day", "I don't have the energy", "I don't feel like doing anything", "I get lazy"],
+     "responses":["Maybe you should try going out for walks or exercising. Would you want to try it?"],
+     "context":[""]
+    },
+    {"tag":"notired",
+     "patterns":["I'm never tired", "I'm always energetic", "I have lots of energy", "I have no issues doing work", "I don't feel tired", "I'm good"],
+     "responses":["Oh that's good. So do you exercise or go for walks?"],
+     "context":[""]
+    },
+    {"tag":"yesexercise",
+     "patterns": ["Yes. I go for walks", "I exercise", "I walk", "I like exercising", "I go for long walks"],
+     "responses": ["That's awesome. Exercising really clears your head. What do you like to do for fun in your own time? "],
+     "context":[""]
+    },
+    {"tag":"noexercise",
+     "patterns": ["I've recently stopped exercising", "I don't like exercising anymore", "I have stopped exercising", "I have no mood to exercise"],
+     "responses": ["What did you like doing for fun?"],
+     "context":[""]
+    },
+    {"tag":"hobbies",
+     "patterns":["reading", "baking", "painting", "cycling", "badminton", "tennis", "jumping", "drawing", "sketching", "writing","running", "adventures","coding","partying"],
+     "responses":["I'd love to try them out too someday."],
+     "context":[""]
+    },
+    {"tag":"workfamprobs",
+     "patterns":["That's cool","That'll be fun"],
+     "responses":["Have you had any issues at work?"],
+     "context":[""]
+    },
+    {"tag":"work",
+     "patterns":["I have problems at work", "I have issues at work", "I don't feel like going to work", "I don't want to go to work", "I don't like going to work", "I'm having issues with my colleagues", "I'm having trouble connecting with colleagues"],
+     "responses":["Have you talked to anybody about it?", "Have you tried speaking to somebody about it?"],
+     "context":[""]
+    },
+    {"tag":"yesworkprob",
+     "patterns":["I have spoken to my colleagues about it", "I have spoken to HR about it", "I have spoken to my manager about it"],
+     "responses":["Have you had any issues with your family?"],
+     "context":[""]
+    },
+    {"tag":"family",
+     "patterns":["I have issues with my family", "I have trouble at home", "I don't like staying at home", "I don't like coming home", "I have issues with my parents", "My parents are getting divorced", "I fight with my siblings a lot", "I am having issues with my spouse"],
+     "responses":["Have you talked to anybody about it?", "Have you tried speaking to somebody about it?"],
+     "context":[""]
+    },
+    {"tag":"yesfamprob",
+     "patterns":["I have spoken to my father about it", "I have spoken to my mother about it", "I have spoken to my parents about it", "I have spoken to my sibling", "I have spoken to my brother", "I spoke to my sister"],
+     "responses":["Oh that's good. Have you had any issues with your friends?"],
+     "context":[""]
+    },
+    {"tag":"friends", 
+     "patterns":["I've been having issues with my friends", "I've been having trouble keeping in touch with my friends","I don't like my friends anymore"], 
+     "responses":["Have you talked to anybody about it?", "Have you tried speaking to somebody about it?"],
+     "context":[""]
+    },
+    {"tag":"yesfriendsprob",
+     "patterns":["I have spoken to my best friend about it", "I have spoken to my other friends about it"],
+     "responses":["Do you have any relationship issues?"],
+     "context":[""]
+    },
+    {"tag":"relationships",
+     "patterns": ["I've been having issues with my boyfriend", "I have been having issues with my girlfriend", "I have been having problems with my boyfriend", "I have been having problems with my girlfriend"],
+     "responses": ["Have you talked to anybody about it?", "Have you tried speaking to somebody about it?"],
+     "context": [""]
+    },
+    {"tag":"yesspeakingsomebody", 
+     "patterns":["Yes I have spoken to my friends about it", "Yes I have spoken to somebody", "I have spoken to somebody", "I have a therapist who I speak to", "I have spoken to my mother about it", "I have spoken to my father about it", "I have spoken to my spouse about it"],
+     "responses":["Ok that's good. Has talking about it helped you solve the problems?", "Has it helped improve the problems?"],
+     "context":[""]
+    },
+    {"tag":"nospeakingsomebody",
+     "patterns": ["No I haven't spoken to somebody about it", "I haven't spoken about it to anybody", "I don't like talking about my problems to anybody", "I don't tell anybody about my problems", "I like dealing with things on my own"],
+     "responses": ["Maybe speaking to someone about it might resolve the problems and lessen the burden you're feeling"],
+     "context":[""]
+    },
+    {"tag":"noprobs_work",
+     "patterns":["I don't have issues with colleagues", "I have no issues at work", "I have good relationships with everybody","I love work"],
+     "responses":["That's very good! Have you had any problems at home or with family?"],
+     "context": [""]
+    },
+    {"tag":"noprobs_family",
+     "patterns": ["I don't have any issues with my family", "I love my family", "There could be no such issues"],
+     "responses": ["Families are the best support systems and I'm glad you have no problems. Do you have problems with your friends?"],
+     "context":[""]
+    },
+    {"tag":"noprobs_friends",
+     "patterns":["I don't fight with my friends", "They support me a lot", "I have fun with my friends"],
+     "responses":["Oh that's great! Do you have any relationship problems or anything?"],
+     "context":[""]
+    },
+    {"tag":"noprobs_relationship",
+     "patterns":["I don't have probelms in my relationship", "I'm not in a relationship"],
+     "responses": ["Great!"],
+     "context":[""]
+    },
+    {"tag":"talksomebody",
+     "patterns": ["Maybe I shall speak to somebody about it", "I will look into those and try talking to somebody"],
+     "responses":["Great!"],
+     "context":[""]
+    },
+    {"tag":"havetalked",
+     "patterns": ["Talking to somebody really helped", "Speaking to somebody gave me a clear perspective"],
+     "respsonses":["Great!"],
+     "context":[""]
+    },
+    {"tag":"therapist",
+     "patterns":["Could you recommend a therapist?"],
+     "responses":["I would suggest the therapsists on CureFit. They have free sessions if you want to try them out and you can change your therapist if you like. But I really do suggest that you do your hobbies and just get through this stage"],
+     "context":[""]
+    }
+]
+}
